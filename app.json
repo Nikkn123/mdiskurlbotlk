@@ -1,0 +1,45 @@
+{
+    "name": "mdiskurlbulk_Bot",
+    "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+    "keywords": [
+        "telegram",
+        "gplink"
+    ],
+    "website": "https://github.com/Trydisk/newshortfor",
+    "repository": "https://github.com/Trydisk/newshortfor",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your telegram bot token",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_KEY": {
+            "description": "https://mdiskurl.com/member/tools/api",
+            "value": ""
+        },
+        "CHANNEL": {
+            "description": "Enter your telegram channel Username (must change and without @)",
+            "value": ""
+        }
+    },
+        
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
